@@ -317,7 +317,8 @@ namespace CityBuilder
                 {
                     if (inputSystem.GetButtonState(KeyCode.Mouse0) == InputSystem.ButtonState.wasJustPressed && isConstructionAvailable)
                     {
-                        CreateStructure(structureToBuild, playerHand.GridPosition);
+                            canvasMonitor.countchange();
+                            CreateStructure(structureToBuild, playerHand.GridPosition);
                         GridUpdateEvent();
                     }
                     break;
@@ -330,7 +331,8 @@ namespace CityBuilder
                     if (inputSystem.GetButtonState(KeyCode.Mouse0) == InputSystem.ButtonState.wasJustPressed && isConstructionAvailable)
                     {
                         CreateStructure(structureToBuild, playerHand.GridPosition);
-                        GridUpdateEvent();
+                            canvasMonitor.countchange();
+                            GridUpdateEvent();
                     }
                     break;
                 }

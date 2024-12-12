@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/aadharauth.unity
+    guid: c1eb11e45b4877c4a8d39508d7a33150
+  - enabled: 1
     path: Assets/Scenes/Scene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace CityBuilder
 {
@@ -28,10 +29,15 @@ namespace CityBuilder
         [SerializeField] private CanvasGroup aqueductPanel = null;
 
         //
-        // Internal Variables
-        //
+        // Internal 
+        public static float count = 0f;
+        public Text counttext;
         private ToolboxPanels activePanel = ToolboxPanels.Construction;
-
+        public void countchange()
+        {
+            count++;
+            counttext.text = count.ToString();
+        }
         public ToolboxPanels GetActivePanel()
         {
             return activePanel;
